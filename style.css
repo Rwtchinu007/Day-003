@@ -17,7 +17,7 @@ body,
 html {
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: rgb(18, 18, 18);
   color: rgb(255, 255, 255);
   font-size: clamp(14px, 1vw, 18px);
 }
@@ -33,21 +33,21 @@ main {
   gap: 0rem;
   align-items: center;
 }
-main section {
+main section.view1 {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1.2rem;
 }
-main section .top {
+main section.view1 .top {
   width: 100%;
 }
-main section .top img {
+main section.view1 .top img {
   width: 100%;
   border-radius: 0.7rem;
 }
-main section .bottom {
+main section.view1 .bottom {
   background-color: rgb(30, 30, 30);
   padding: 1rem;
   border-radius: 10px;
@@ -55,26 +55,26 @@ main section .bottom {
   flex-direction: column;
   gap: 3rem;
 }
-main section .bottom .text {
+main section.view1 .bottom .text {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 }
-main section .bottom .text h1 {
-  font-weight: 600;
+main section.view1 .bottom .text h1 {
+  font-weight: 500;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
-main section .bottom .text p {
+main section.view1 .bottom .text p {
   color: white;
-  font-size: 1.1rem;
-  line-height: 1.9rem;
+  font-size: 1.35rem;
+  line-height: 2.1rem;
   font-family: satoshi;
   color: rgb(154, 153, 151);
-  font-weight: 500;
-  width: 85%;
+  font-weight: 450;
+  width: 80%;
 }
-main section .bottom .text button {
+main section.view1 .bottom .text button {
   width: -moz-fit-content;
   width: fit-content;
   border: none;
@@ -82,32 +82,114 @@ main section .bottom .text button {
   border-radius: 12px;
   font-weight: 700;
 }
+main section.view2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 1.2rem;
+}
+main section.view2 .top,
+main section.view2 .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+main section.view2 small {
+  font-size: 1rem;
+  color: rgb(154, 153, 151);
+  font-weight: 570;
+  letter-spacing: 1.3px;
+}
+main section.view2 h2 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: white;
+}
+main section.view3 {
+  width: 100%;
+  padding: 1.2rem;
+}
+main section.view3 .top {
+  width: 100%;
+}
+main section.view3 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main section.view3 .bottom {
+  background-color: rgb(30, 30, 30);
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main section.view3 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+main section.view3 .bottom .text h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+main section.view3 .bottom .text p {
+  color: white;
+  font-size: 1.35rem;
+  line-height: 2rem;
+  font-family: satoshi;
+  color: rgb(154, 153, 151);
+  font-weight: 450;
+  width: 88%;
+}
 
 @media (min-width: 900px) {
-  main section {
+  main section.view1 {
     flex-direction: row;
     gap: 1.3rem;
     padding: 1rem 1.5rem;
   }
-  main section .top,
-  main section .bottom {
+  main section.view1 .top,
+  main section.view1 .bottom {
     width: 50%;
   }
-  main section .bottom {
+  main section.view1 .bottom {
     justify-content: space-between;
     padding: 2.5rem 3rem;
     font-size: 1.1rem;
   }
-  main section .bottom .text {
+  main section.view1 .bottom .text {
     gap: 1.5rem;
   }
-  main section .bottom .text h1 {
+  main section.view1 .bottom .text h1 {
     font-size: 3.25rem;
     width: 75%;
   }
-  main section .bottom .text p {
+  main section.view1 .bottom .text p {
     font-size: 1.2rem;
     width: 80%;
     font-weight: 400;
+  }
+  main section.view2 {
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+  }
+  main section.view2 h2 {
+    font-size: 4rem;
+  }
+  main section.view3 {
+    flex-direction: row-reverse;
+    gap: 1.3rem;
+    padding: 1rem 1.5rem;
+  }
+  main section.view3 .top,
+  main section.view3 .bottom {
+    width: 50%;
+  }
+  main section.view3 .bottom .paragraphs {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
